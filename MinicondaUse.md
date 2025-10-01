@@ -1,21 +1,22 @@
-# 使用Miniconda进行包管理
+# 使用 Miniconda 进行包管理
+
 ---
 
-## miniconda的用法与普通虚拟环境的区别 ##
+## miniconda 的用法与普通虚拟环境的区别
 
-ꔷ特性	        普通虚拟环境 (venv)	                               |————————————   Miniconda (使用 conda)
+ꔷ 特性 普通虚拟环境 (venv) |———————————— Miniconda (使用 conda)
 
-ꔷ核心功能	 隔离项目的 Python 包	                                |————————————   隔离整个环境，包括 Python 版本和其他软件
+ꔷ 核心功能 隔离项目的 Python 包 |———————————— 隔离整个环境，包括 Python 版本和其他软件
 
-ꔷ管理对象	 仅 Python 包 (如 requests, Django)	                   |————————————   Python 包、Python 解释器本身、C/C++库、CUDA、R语言等任何软件
+ꔷ 管理对象 仅 Python 包 (如 requests, Django) |———————————— Python 包、Python 解释器本身、C/C++库、CUDA、R 语言等任何软件
 
-ꔷ来源      是Python 3.3+ 内置，无需安装	                        |————————————   需独立安装
+ꔷ 来源 是 Python 3.3+ 内置，无需安装 |———————————— 需独立安装
 
-ꔷ大小	    非常轻量，只在项目目录创建文件夹	                       |————————————   较重，需要独立安装几十MB的程序
+ꔷ 大小 非常轻量，只在项目目录创建文件夹 |———————————— 较重，需要独立安装几十 MB 的程序
 
-ꔷ包来源	来自于PyPI (Python Package Index)	                   |————————————   Anaconda/Conda-Forge 源 (通常是预编译好的二进制包)
+ꔷ 包来源 来自于 PyPI (Python Package Index) |———————————— Anaconda/Conda-Forge 源 (通常是预编译好的二进制包)
 
-ꔷ典型命令	python -m venv venv source venv/bin/activate pip install ... |—————	conda create -n myenv python=3.9 conda activate myenv conda install ...
+ꔷ 典型命令 python -m venv venv source venv/bin/activate pip install ... |————— conda create -n myenv python=3.9 conda activate myenv conda install ...
 
 ---
 
@@ -42,7 +43,9 @@ conda env list
 #  conda查看已经安装的包
 conda list
 ```
-__这个时候关闭当前终端开启多一个终端__
+
+**这个时候关闭当前终端开启多一个终端**
+
 ```bash
 #  确认是否成功安装conda
 conda --version
