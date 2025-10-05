@@ -51,3 +51,20 @@ lv_conf.h
     #define LV_FS_STDIO_LETTER 'A'
 #endif
 ```
+*之后在终端当中输入以下指令：*
+```bash
+
+#  当前路径是在lv_port_linux下
+mkdir ./build
+cd ./build
+cmake ..
+make -j${nproc}
+
+#  等待编译完沉，进行下面步骤
+ls -l
+#  看看是否有bin这个文件夹
+cd ./bin
+./lvglsim
+```
+
+这下就完成了基本的配置
