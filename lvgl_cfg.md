@@ -26,3 +26,28 @@ git submodule update --init --recursive
 #  下面更改一下lv_conf.h
 
 ```
+
+```C
+lv_conf.h
+/* 启用 SDL 驱动 */
+#define LV_USE_SDL              1
+
+/* 禁用其他不相关的硬件驱动 */
+#define LV_USE_LINUX_FBDEV      0
+#define LV_USE_EVDEV            0
+#define LV_USE_X11              0
+/* ... 其他驱动也都应为 0 ... */
+
+/* 设置推荐的色深 */
+#define LV_COLOR_DEPTH          32
+
+/* 操作系统接口（SDL 移植版通常不需要） */
+#define LV_USE_OS               LV_OS_NONE
+
+/* 在 PC 环境下，使用标准 C 库进行内存管理和文件操作 */
+#define LV_USE_STDLIB_MALLOC    LV_STDLIB_CLIB
+#define LV_USE_FS_STDIO         1
+#if LV_USE_FS_STDIO
+    #define LV_FS_STDIO_LETTER 'A'
+#endif
+```
