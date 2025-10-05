@@ -37,6 +37,9 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 #  安装miniconda(一路确认加enter加yes)
 bash Miniconda3-latest-Linux-x86_64.sh
 
+#  初始化
+~/miniconda3/bin/conda init
+
 #  conda环境查看
 conda env list
 
