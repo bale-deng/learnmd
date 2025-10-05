@@ -37,7 +37,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 #  安装miniconda(一路确认加enter加yes)
 bash Miniconda3-latest-Linux-x86_64.sh
 
-#  初始化
+#  初始化，执行完这条指令之后关闭原来的终端，新开一个终端
 ~/miniconda3/bin/conda init
 
 #  conda环境查看
@@ -46,8 +46,6 @@ conda env list
 #  conda查看已经安装的包
 conda list
 ```
-
-**这个时候关闭当前终端开启多一个终端**
 
 ```bash
 #  确认是否成功安装conda
