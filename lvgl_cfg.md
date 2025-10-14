@@ -1,6 +1,9 @@
-# 在ubuntu上跑lvgl
+# 在 ubuntu 上跑 lvgl
+
 ---
-拉取lvgl仓库
+
+拉取 lvgl 仓库
+
 ```bash
 
 #  安装SDL2并验证
@@ -51,7 +54,9 @@ lv_conf.h
     #define LV_FS_STDIO_LETTER 'A'
 #endif
 ```
-*之后在终端当中输入以下指令：*
+
+_之后在终端当中输入以下指令：_
+
 ```bash
 
 #  当前路径是在lv_port_linux下
@@ -67,4 +72,4 @@ cd ./bin
 ./lvglsim
 ```
 
-这下就完成了基本的配置
+这下就完成了基本的配置 降价榜
